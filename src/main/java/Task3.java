@@ -19,11 +19,13 @@ public class Task3 {
         System.out.println("Введите элементы массива через пробел: ");
         for (int i = 0; i < size; i++) {
             arr[i] = scanner.nextInt();
+        }
+        System.out.println("Введенный массив: " + Arrays.toString(arr));
+        for (int i = 0; i < size; i++) {
             if (arr[i] % 3 == 0) {
                 resultArr.add(arr[i]);
             }
         }
-        System.out.println("Введенный массив: " + Arrays.toString(arr));
         if (resultArr.isEmpty()) {
             System.out.println("В массиве нет элементов кратных 3");
         } else {
